@@ -19,6 +19,7 @@
   - not using pcap_loop() and pcap_dispatch() instead we're using pcap_next() (sniffers should avoid using this function) so for now 
        we're only capturing a single packet.
   - haven't implement anything related to the packet after it being captured (program captures a packet, prints it size in bytes and then hangs).
+  - will try and use a more object oriented approach.
 */
 
 static char* deviceNameInUse = nullptr;
