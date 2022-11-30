@@ -11,6 +11,14 @@
 
 /*
   gcc -lpcap sniffer.cpp -o sniffer 
+  
+  Project not completed ! 
+  - the filter is hardcoded for now but will allow user input for it, for now it is hardcoded to sniff on port 23 (usually telnet).
+  - the sniffing part has been coded in a single block of code, we will try and split this in multiple functions.
+  - lack verbosity in the sniffing area, plus could potentially rework error messages.
+  - not using pcap_loop() and pcap_dispatch() instead we're using pcap_next() (sniffers should avoid using this function) so for now 
+       we're only capturing a single packet.
+  - haven't implement anything related to the packet after it being captured (program captures a packet then hangs).
 */
 
 static char* deviceNameInUse = nullptr;
