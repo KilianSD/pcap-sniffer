@@ -18,7 +18,7 @@
   - lack verbosity in the sniffing area, plus could potentially rework error messages.
   - not using pcap_loop() and pcap_dispatch() instead we're using pcap_next() (sniffers should avoid using this function) so for now 
        we're only capturing a single packet.
-  - haven't implement anything related to the packet after it being captured (program captures a packet then hangs).
+  - haven't implement anything related to the packet after it being captured (program captures a packet, prints it size in bytes and then hangs).
 */
 
 static char* deviceNameInUse = nullptr;
