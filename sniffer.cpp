@@ -135,15 +135,6 @@ bool useDevice(std::string& line, std::vector<pcap_if_t*> devicesList){
   return false;
 }
 
-/*
-class Device {
-public:
-  pcap_if_t* deviceInformationTable;
-  pcap_t* deviceSessionHandle;
-  Device()
-};
-*/
-
 int main(int argc, char** argv){
   std::string line;
   char* errbuf = nullptr;
