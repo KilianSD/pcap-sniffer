@@ -7,7 +7,6 @@
 #include <cstdio>
 #include <pcap.h>
 #include <cstdlib>
-#include "device.h"
 
 /*
   gcc -lpcap sniffer.cpp -o sniffer 
